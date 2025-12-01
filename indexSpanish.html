@@ -11,17 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
+        <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    >
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -41,69 +36,142 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="indexSpanish.html">Home</a>
+              <a
+                class="nav-link btn btn-sm btn-outline-secondary"
+                href="indexSpanish.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="lawyersSpanish.html">Abogados</a>
+              <a
+                class="nav-link btn btn-sm btn-outline-secondary"
+                href="lawyersSpanish.html"
+                >Abogados</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resourcesSpanish.html">Recursos</a>
+              <a
+                class="nav-link btn btn-sm btn-outline-secondary"
+                href="resourcesSpanish.html"
+                >Recursos</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-sm btn-outline-secondary"
+                href="index.html"
+              >
+                English
+              </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="container">
-        <div class="row">
-    <h1 class="text-center">Unidos</h1>
-    
-    <p class="red-card"></p>
-    <list class = "front-card text-center">
-        <ul> 
-            <li>NO ABRA LA PUERTA si un agente de inmigración está tocando
-la puerta.</li>
+      <h1 class="text-center mb-2">Unidos</h1>
 
-            <li>NO CONTESTE NINGUNA PREGUNTA de un agente de
-inmigración si trata de hablar con usted. Usted tiene el derecho a
-guardar silencio.</li>
+      <p class="hint">
+        <i class="fa-solid fa-hand-pointer"></i> Pase el cursor sobre la tarjeta
+        para ver el reverso
+      </p>
 
-            <li>NO FIRME NADA sin antes hablar con un abogado. Usted tiene
-el derecho de hablar con un abogado.</li>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card-header-text">Frente de la Tarjeta</div>
+            <ul>
+              <li>
+                <strong>NO ABRA LA PUERTA</strong> si un agente de inmigración
+                está tocando la puerta.
+              </li>
+              <li>
+                <strong>NO CONTESTE NINGUNA PREGUNTA</strong> de un agente de
+                inmigración si trata de hablar con usted. Usted tiene el derecho
+                a guardar silencio.
+              </li>
+              <li>
+                <strong>NO FIRME NADA</strong> sin antes hablar con un abogado.
+                Usted tiene el derecho de hablar con un abogado.
+              </li>
+              <li>
+                Si usted está fuera de su casa, pregúntele al agente si tiene la
+                libertad de irse y si le dice que sí, váyase con tranquilidad.
+              </li>
+              <li>
+                <strong>ENTRÉGUELE ESTA TARJETA EL AGENTE.</strong> Si usted
+                está dentro de su casa, muestre la tarjeta por la ventana o
+                pásela debajo de la puerta.
+              </li>
+            </ul>
+            <div class="text-center mt-4">
+              <small>(Pase el cursor para leer el script para el agente)</small>
+            </div>
+          </div>
 
-            <li>Si usted está fuera de su casa, pregúntele al agente si tiene la
-libertad de irse y si le dice que sí, váyase con tranquilidad.</li>
+          <div class="flip-card-back">
+            <div class="card-header-text">Al Agente</div>
+            <ul>
+              <li>
+                No deseo hablar con usted, responder sus preguntas ni firmar o
+                entregarle ningún documento, conforme a mis derechos de la
+                Quinta Enmienda de la Constitución de los Estados Unidos.
+              </li>
+              <li>
+                No le doy permiso para entrar a mi hogar, conforme a mis
+                derechos de la Cuarta Enmienda de la Constitución de los Estados
+                Unidos, a menos que tenga una orden de registro firmada por un
+                juez o magistrado, con mi nombre, y que la deslice por debajo de
+                la puerta.
+              </li>
+              <li>
+                No le doy permiso para registrar ninguna de mis pertenencias,
+                conforme a mis derechos de la Cuarta Enmienda.
+              </li>
+              <li>Elijo ejercer mis derechos constitucionales.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-            <li>ENTRÉGUELE ESTA TARJETA EL AGENTE. Si usted está
-dentro de su casa, muestre la tarjeta por la ventana o pásela
-debajo de la puerta.</li>
-        </ul>
-
-        <br>
-
-    </list>
-      
-    <list class="back-card text-center">
-        <ul>
-            <li>No deseo hablar con usted, responder sus preguntas ni firmar o entregarle ningún documento, 
-              conforme a mis derechos de la Quinta Enmienda de la Constitución de los Estados Unidos.</li>
-
-            <li>No le doy permiso para entrar a mi hogar, conforme a mis derechos de la Cuarta Enmienda de la Constitución de los Estados Unidos, a menos que tenga una orden de registro firmada por un juez o magistrado,
-               con mi nombre, y que la deslice por debajo de la puerta.</li>
-                
-            <li>No le doy permiso para registrar ninguna de mis pertenencias, 
-              conforme a mis derechos de la Cuarta Enmienda.</li>
-
-            <li>Elijo ejercer mis derechos constitucionales.</li>
-        </ul>
-    </list>
-
-    <p class="description text-center">Este sitio web fue creado para apoyar a inmigrantes indocumentados en el Área de la Bahía que buscan asistencia legal confiable e información verificada.
-Nuestro objetivo es conectar a las personas con abogados de inmigración locales y calificados, así como brindar acceso a recursos esenciales que puedan guiarlos a través de procesos legales, servicios comunitarios y opciones de apoyo.
-Aspiramos a ofrecer información clara, accesible y práctica para empoderar a quienes enfrentan desafíos en su camino migratorio.
-    </p>
+      <div class="row mt-5 mb-5 lawyer-guidance text-center">
+        <div class="col-12">
+            <h2><i class="fa-solid fa-circle-exclamation"></i>¿Necesita Asistencia Legal?</h2>
+            <p class="lead">
+                Si usted o un ser querido enfrentan problemas migratorios, es crucial consultar inmediatamente con un abogado calificado.
+                <br>
+                No espere contar con asesoramiento legal protege sus derechos y garantiza el manejo adecuado de su caso.
+            </p>
+            <a href="lawyersSpanish.html" class="btn btn-lg btn-danger shadow-sm">
+                <i class="fa-solid fa-scale-balanced"></i> Encuentre Abogados de Inmigración de Confianza
+            </a>
+            <p class="mt-3 text-muted">
+                Nuestro directorio solo incluye abogados especializados en derecho de inmigración en el Área de la Bahía.
+            </p>
+        </div>
     </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <p class="description text-center text-muted">
+            Este sitio web fue creado para apoyar a inmigrantes indocumentados
+            en el Área de la Bahía que buscan asistencia legal confiable e
+            información verificada. Mi objetivo es conectar a las personas con
+            abogados de inmigración locales y calificados, así como brindar
+            acceso a recursos esenciales que puedan guiarlos a través de
+            procesos legales, servicios comunitarios y opciones de apoyo.
+            Aspiramos a ofrecer información clara, accesible y práctica para
+            empoderar a quienes enfrentan desafíos en su camino migratorio.
+          </p>
+        </div>
+      </div>
     </main>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
   </body>
 </html>
