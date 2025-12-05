@@ -1,16 +1,16 @@
 body {
-  background-color: #FFF8E1;
+  background-color: #fff8e1;
 }
 
 main.container {
   background-color: transparent;
-    
-    background-image: none;
+
+  background-image: none;
 }
 
 .navbar {
- background-color: #FFECB3; 
-    border-bottom: 1px solid #d32f2f; 
+  background-color: #ffecb3;
+  border-bottom: 1px solid #d32f2f;
 }
 
 .description {
@@ -18,17 +18,17 @@ main.container {
 }
 
 .navbar-nav .nav-link {
-    color: #d32f2f; 
+  color: #d32f2f;
 }
 
 .btn-outline-secondary {
-    color: #d32f2f;
-    border-color: #d32f2f ;
+  color: #d32f2f;
+  border-color: #d32f2f;
 }
 
 .btn-outline-secondary:hover {
-    background-color: #E65100;
-    color: white;
+  background-color: #e65100;
+  color: white;
 }
 
 ul {
@@ -106,4 +106,10 @@ ul {
   font-size: 0.9rem;
   margin-bottom: 10px;
   font-style: italic;
+}
+
+
+.img-container {
+  aspect-ratio: 4/4;
+  overflow: hidden;
 }
