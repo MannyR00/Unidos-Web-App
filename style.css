@@ -1,20 +1,21 @@
 body {
-  background-color: #fff8e1;
+  background: linear-gradient(to bottom right, #090635, #a09797);
+}
+
+p, h1 {
+  color: rgb(255, 255, 255);
 }
 
 main.container {
   background-color: transparent;
-
   background-image: none;
 }
 
 .navbar {
-  background-color: #ffecb3;
-  border-bottom: 1px solid #d32f2f;
-}
+  background-color: transparent;
 
-.description {
-  color: #495057;
+  /* Retain the border and red color */
+  border-bottom: 1px solid #d32f2f;
 }
 
 .navbar-nav .nav-link {
@@ -38,6 +39,7 @@ ul {
 
 .card {
   max-width: 800px;
+  background-color: #d32f2f;
 }
 
 .flip-card {
@@ -94,20 +96,12 @@ ul {
 .card-header-text {
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(255, 255, 255);
   margin-bottom: 20px;
   padding-bottom: 5px;
   font-weight: bold;
   text-align: center;
 }
-.hint {
-  text-align: center;
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
 
 .img-container {
   aspect-ratio: 4/4;
