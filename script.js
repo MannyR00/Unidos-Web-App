@@ -32,13 +32,13 @@ async function getAllRecords() {
        <article class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
        <div class = "grid-container">
           <div class = "card">
-           
+           <a href="lawyers.html?id=${data.records[i].id}">
             ${
               lawyer
                 ? `<img class="img-container card-img-top rounded" alt="${name}" src="${lawyer[0].url}">`
                 : ``
             }
-            
+            </a>
             <div class="card-body">
               <h5 class="card-title">${name}</h5>
               <p class="card-text">
@@ -81,24 +81,24 @@ async function getOneRecord(id) {
     .then((data) => {
       console.log(data); // response is a single object
 
-      let lawyer = data.records[i].fields["Lawyer"]; // here we are getting column values
-      let name = data.records[i].fields["Name"]; //here we are using the Field ID to fecth the name property
-      let rating = data.records[i].fields["Rating"];
-      let language = data.records[i].fields["Language"];
-      let office = data.records[i].fields["Office"]; // here we are getting column values
-      let website = data.records[i].fields["Website"]; //here we are using the Field ID to fecth the name property
-      let email = data.records[i].fields["Email"];
-      let address = data.records[i].fields["Address"];
-      let phone = data.records[i].fields["Phone"];
-      let description = data.records[i].fields["Description"];
-      let hours = data.records[i].fields["Hours"];
+      let lawyer = data.fields["Lawyer"]; // here we are getting column values
+      let name = data.fields["Name"]; //here we are using the Field ID to fecth the name property
+      let rating = data.fields["Rating"];
+      let language = data.fields["Language"];
+      let office = data.fields["Office"]; // here we are getting column values
+      let website = data.fields["Website"]; //here we are using the Field ID to fecth the name property
+      let email = data.fields["Email"];
+      let address = data.fields["Address"];
+      let phone = data.fields["Phone"];
+      let description = data.fields["Description"];
+      let hours = data.fields["Hours"];
 
       let newHtml = `
         <div class="card list mb-3">
   <div class="row g-0">
     <div class="col-md-4 d-flex justify-content-center align-items-center">
      ${
-       logo
+       lawyer
          ? `<img class="img-fluid back ms-4" alt="${name}" src="${lawyer[0].url}">`
          : ``
      }
@@ -109,7 +109,7 @@ async function getOneRecord(id) {
         <p class="card-text">${description}</p>
         <p class="card-text">Rating: <small>${rating}</p>
         <p class="card-text">${address}</p>
-        <a href="${map}" target="_blank"><button type="button" class="btn btn-primary btn-sm">Get Directions</button></a>
+        
       </div>
     </div>
   </div>
@@ -119,8 +119,8 @@ async function getOneRecord(id) {
   <div class="row g-0">
     <div class="col-md-4 d-flex justify-content-center ">
     ${
-      picture
-        ? `<img class="img-fluid front" alt="${name}" src="${picture[0].url}">`
+      office
+        ? `<img class="img-fluid front" alt="${name}" src="${office[0].url}">`
         : ``
     }
        </div>
@@ -130,14 +130,14 @@ async function getOneRecord(id) {
   <div class="card list hours shift">
     <div class="card-body">
       <h4 class="card-title">🕔 Hours</h4>
-      <p class="card-text">${formattedString(hours)}</p>
+    
       
     </div>
   </div>
   <div class="card list hours">
     <div class="card-body">
       <h4 class="card-title">😁 🕔 Happy Hours</h4>
-      <p class="card-text">${formattedString(happy)}</p>
+     
      
     </div>
   </div>
@@ -147,23 +147,15 @@ async function getOneRecord(id) {
     <tbody>
     <tr>
       <th scope="row misc">Neighborhood</th>
-      <td class="card-text">${neighborhood}</td>
+      <td class="card-text">${name}</td>
     </tr>
     <tr>
       <th scope="row misc">Outdoor Seating</th>
-      <td>${outdoor}</td>
+      <td>${name}</td>
     </tr>
-    <tr>
-      <th scope="row misc">Food Served</th>
-      <td colspan="2">${formattedString(food)}</td>
-    </tr>
-     <tr>
-      <th scope="row misc">Merchandise</th>
-      <td colspan="2">${formattedString(merchandise)}</td>
-    </tr>
-    <tr>
+    
       <th scope="row misc">Links</th>
-      <td colspan="2"><a href="${website}" target="_blank"><button type="button" class="btn btn-primary btn-sm go">Website</button></a> <a href="${yelp}" target="_blank"><button type="button" class="btn btn-primary btn-sm go">Yelp</button></a></td>
+     
     </tr>
   </tbody>
 </table>
