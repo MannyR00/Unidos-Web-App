@@ -92,7 +92,7 @@ async function getOneRecord(id) {
       let address = data.fields["Address"];
       let phone = data.fields["Phone"];
       let description = data.fields["Descripcion"];
-      let hours = data.fields["Hours"];
+      let hours = data.fields["Horas"];
 
       let newHtml = `
   <div class="card shadow-lg p-3 mb-5 bg-white rounded ">

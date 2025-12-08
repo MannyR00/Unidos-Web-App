@@ -145,3 +145,8 @@ hr{
   background-color: red;
   height: 10px;
 }
+
+.hint{
+  font-size: 1.5rem;
+  font-family: "Bona Nova SC", serif;
+}

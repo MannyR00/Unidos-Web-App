@@ -30,6 +30,7 @@ async function getAllRecords() {
         newHtml += `
 
        <article class="col-sm-12 col-md-6 col-lg-4 col-xxl-3 justify-content-center">
+       
        <div class = "grid-container">
           <div class = "card list-view">
            <a href="lawyers.html?id=${data.records[i].id}">
