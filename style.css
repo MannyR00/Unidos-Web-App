@@ -77,6 +77,9 @@ ul {
   text-align: center;
   list-style-position: inside;
 }
+.lawyers ul {
+  text-align: left;
+}
 
 .lawyers article {
   display: flex;
