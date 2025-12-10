@@ -38,8 +38,10 @@ main.container {
 
 .navbar {
   background-color: transparent;
-
-  /* Retain the border and red color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
   border-bottom: 1px solid #d32f2f;
   margin-bottom: 1rem;
 }
