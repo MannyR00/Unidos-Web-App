@@ -32,8 +32,6 @@ main.container {
 
 .navbar {
   background-color: transparent;
-
-  /* Retain the border and red color */
   border-bottom: 1px solid #d32f2f;
 }
 
