@@ -4,7 +4,30 @@
   --color-secondary: #e65100;
 }
 body {
-  background: linear-gradient(to bottom right, #090635, #a09797);
+
+  background: linear-gradient(-45deg, #090635, #5e0a0a, #a09797, #090635);
+  
+  
+  background-size: 400% 400%;
+  
+
+  animation: gradientAnimation 15s ease infinite;
+  
+ 
+  min-height: 100vh;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 p,
@@ -14,6 +37,12 @@ h1 {
 h1 {
   font-family: "Parkinsans", sans-serif;
   font-size: 4rem;
+}
+h2{
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  
+  
+  color: white;
 }
 
 h5,
@@ -191,3 +220,6 @@ hr {
   font-size: 1.5rem;
   font-family: "Bona Nova SC", serif;
 }
+
+
+
