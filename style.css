@@ -4,19 +4,12 @@
   --color-secondary: #e65100;
 }
 body {
-
   background: linear-gradient(-45deg, #090635, #5e0a0a, #a09797, #090635);
-  
-  
+  padding-top: 75px;
   background-size: 400% 400%;
-  
-
   animation: gradientAnimation 15s ease infinite;
-  
- 
   min-height: 100vh;
 }
-
 
 @keyframes gradientAnimation {
   0% {
@@ -38,10 +31,9 @@ h1 {
   font-family: "Parkinsans", sans-serif;
   font-size: 4rem;
 }
-h2{
+h2 {
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
-  
-  
+
   color: white;
 }
 
@@ -73,9 +65,7 @@ main.container {
   padding: 0.5rem 4rem;
   border-bottom: 1px solid #d32f2f;
   margin-bottom: 1rem;
-   box-shadow: 
-    0 8px 16px rgba(0, 0, 0, 0.5),  
-    0 0 20px rgba(211, 47, 47, 0.4); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 20px rgba(211, 47, 47, 0.4);
 }
 
 .navbar-brand {
@@ -93,7 +83,7 @@ main.container {
 .navbar-nav .nav-link {
   color: var(--color-primary);
   font-size: 1.2rem;
-   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
 }
 
 .btn-outline-secondary {
@@ -223,6 +213,3 @@ hr {
   font-size: 1.5rem;
   font-family: "Bona Nova SC", serif;
 }
-
-
-
