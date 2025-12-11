@@ -42,7 +42,7 @@ async function getAllRecords() {
             <div class="card-body">
               <h5 class="card-title text-center name"><strong>${name}</strong> </h5>
               <h4 class="text-center rating">★ ${rating} </h4>
-              <p class="card-text">
+              <p class="card-text description text-center">
                 ${briefDescription}
               </p>
               <p class = "text-center">
@@ -104,7 +104,7 @@ async function getOneRecord(id) {
             ? `<img class="img-fluid rounded-circle shadow mb-3" style="width: 150px; height: 150px; object-fit: cover;" alt="${name}" src="${lawyer[0].url}">`
             : ``
         }
-        <h3 class=" mb-1">${name}</h3>
+        <h3 class=" mb-1 text-center">${name}</h3>
         <p class="small text-secondary">Abogado/a de Inmigración</p>
         <p class="badge bg-primary text-wrap fs-6">${language}</p>
         <div class="rating-info mb-3">
@@ -118,7 +118,7 @@ async function getOneRecord(id) {
           
           <h4 class="card-title text-danger border-bottom pb-2 mb-3"><i class="fas fa-info-circle me-2"></i> Descripcion</h4>
           
-          <p class="card-text">${description}</p>
+          <p class="card-text description text-center">${description}</p>
           
           <h4 class="card-title text-danger border-bottom pb-2 mt-4 mb-3"><i class="fas fa-headset me-2"></i> Contacto</h4>
           <ul class="list-unstyled">
