@@ -118,7 +118,7 @@ async function getOneRecord(id) {
           
           <h4 class="card-title text-danger border-bottom pb-2 mb-3"><i class="fas fa-info-circle me-2"></i> Descripcion</h4>
           
-          <p class="card-text description text-center">${description}</p>
+          <p class="card-text description">${description}</p>
           
           <h4 class="card-title text-danger border-bottom pb-2 mt-4 mb-3"><i class="fas fa-headset me-2"></i> Contacto</h4>
           <ul class="list-unstyled">
